@@ -1,0 +1,44 @@
+.students {
+    padding: 50px 0;
+}
+
+.students .className {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.studentsBlock {
+    width: 80%;
+    margin: auto;
+}
+
+.studentsItem, .studentsItemNo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 20px;
+    margin: 7px 0;
+    padding: 10px;
+}
+
+.studentsItem, .studentsItemNo a{
+    margin-top: 25px;
+}
+
+.studentsItem p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.studentsItemNo p {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}

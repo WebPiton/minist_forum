@@ -1,0 +1,32 @@
+.notfound {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.notfound img {
+    width: 50%;
+    margin: auto;
+}
+
+.notfound p {
+    font-size: 30px;
+    font-weight: 900;
+    width: max-content;
+    margin: auto;
+    color: #d4d4d4;
+    padding: 20px 0;
+}
+
+.outnot {
+    background: #29a8df;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: auto;
+}

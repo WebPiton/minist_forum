@@ -1,0 +1,656 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Home */
+
+.body {
+    padding: 100px 100px 0px 100px;
+}
+
+.body header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.body .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.body .homeMain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.body .homeMain  img{
+    width: 50%;
+}
+
+.body .homeMain h1{
+    line-height: 75px;
+    margin-bottom: 20px;
+    font-size: 46px;
+}
+
+.body .homeMain p{
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.body .homeButton{
+    margin-top: 75px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.body .res№1 {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-bottom: 40px;
+    border-bottom: 0.7px solid #5A5A5A;
+    margin-bottom: 75px;
+}
+
+.body .res№1 > img{
+    margin-right: 45px;
+    object-fit: contain;
+}
+
+.body .res№1 > div > h1{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.body .res№1 > div > p{
+    font-size: 18px;
+    color: #5A5A5A;
+}
+
+.body .necessarilyOA{
+    width: 100%;
+}
+
+.body .cardList{
+    width: 100%;
+    margin: 75px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body .cardList > img{
+    object-fit: contain;
+    padding: 50px;
+}
+
+.body .cardList > div > .card {
+    max-width: 455px;
+    min-width: 310px;
+    display: flex;
+    margin-bottom: 125px;
+}
+
+.body .cardList > div > .card > img{
+    height: 100%;
+    margin-right: 25px;
+}
+
+.body .cardList > div > .card > .cardInfo > h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.body .cardList > div > .card > .cardInfo > p{
+    font-size: 18px;
+}
+
+.body .res№2 {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-top: 40px;
+    border-top: 0.7px solid #5A5A5A;
+    margin-bottom: 275px;
+}
+
+.body .res№2 > img{
+    margin-right: 45px;
+    object-fit: contain;
+}
+
+.body .res№2 > div > h1{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.body .res№2 > div > p{
+    font-size: 18px;
+    color: #5A5A5A;
+}
+
+/* Module */
+
+.moduleBlock{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.moduleBlock .module{
+    width: 80%;
+}
+
+.moduleBlock .moduleInfo{
+    margin-bottom: 20px;
+}
+
+.moduleBlock .moduleInfo > p {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.moduleBlock .moduleCard{
+    padding: 37px 20px;
+    border: 4px solid #11c511;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px #11c511;
+}
+
+.moduleBlock .moduleCardLock {
+    padding: 37px 20px;
+    border: 4px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: no-drop;
+    box-shadow: 4px 4px 0px #ccc;
+}
+
+.moduleBlock .moduleCard > p, .moduleBlock .moduleCardLock > p{
+    font-size: 23px;
+    font-weight: 700;
+    height: max-content;
+}
+
+.moduleBlock .progressBar {
+    display: flex;
+    width: 50%;
+}
+
+.moduleBlock .progress_bar_line {
+    width: 100%;
+    margin: 5px;
+}
+
+/* Pers */
+
+.personalArea {
+    padding: 0 100px;
+}
+
+.personalArea .persInfoBlock {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.personalArea .persInfoBlock img {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #5A5A5A;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.personalArea .persInfoBlock .persInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.personalArea .persInfoBlock .persInfo > h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.personalArea .persInfoBlock .persInfo > p {
+    color: #5A5A5A;
+    font-size: 20px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.personalArea .persInfoBlock .persInfo > p > img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 0;
+}
+
+.personalArea .persInfoBlock .buttonsBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.personalArea .persInfoBlock .buttonsBlock button {
+    margin: 7px 0;
+}
+
+.personalArea .static h2 {
+    font-size: 30px;
+    padding: 15px 0;
+}
+
+.personalArea .staticContent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.personalArea .staticitem {
+    border: 1px solid #D3D3D3;
+    border-radius: 20px;
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    align-items: center;
+}
+
+.personalArea .staticitem img {
+    margin-right: 10px;
+}
+
+.personalArea .staticitem .staticitemText {
+    width: 100%;
+}
+
+.personalArea .staticitem .staticitemText p {
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+}
+
+.personalArea .achievements {
+    padding-bottom: 20px;
+}
+
+.personalArea .achievements h2 {
+    font-size: 30px;
+    padding: 15px 0;
+}
+
+.personalArea .achievementscontent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.personalArea .achievementscontent .achievementsItem {
+    border: 1px solid #5A5A5A;
+    border-radius: 20px;
+    padding: 15px 20px;
+    width: max-content;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+
+}
+
+/* Test */
+
+.testList{
+    padding: 67px 57px;
+}
+
+.testList .testInfo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.testList .testInfo > p {
+    font-size: 22px;
+    font-weight: 700;
+    width: max-content;
+}
+
+.testList .testContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.testList .testContent h2{
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.testList .testContent p{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.testList .testVideo{
+    width: 80%;
+    min-height: 540px;
+    background-color: bisque;
+    border-radius: 25px;
+}
+
+.testList .testAttempt{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testList .testAttemptsTable {
+    width: 80%;
+}
+
+.testList .testAttemptsTable table {
+    width:100%;
+    border-spacing: 0px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+.testList table thead {
+    background: #4AA936;
+    text-align: center;
+}
+
+.testList table thead tr:first-child > td:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.testList table thead tr:last-child > td:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.testList table tbody tr {
+    text-align: center;
+}
+
+.testList table tbody tr:nth-child(2n+2) {
+    background: #F1F1F2;
+}
+
+.testList table tbody tr:last-child > td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+.testList table tbody tr:last-child > td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+.testList .testAttemptsTable table p {
+    margin: auto;
+    padding: 7px;
+}
+
+.testList .testComments {
+    width: 80%;
+}
+
+.testList .testComments .testCommentsButton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+
+.testList .testComments .testCommentsButton textarea {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.testList .testComments .testCommentsButton textarea::placeholder {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Auth / Reg */
+
+.Form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Form > form{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form > form > p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media(max-width: 1540px){
+    .Form{
+        width: 30%;
+    }
+}
+
+@media(max-width: 730px){
+    .Form{
+        width: 60%;
+    }
+}
+
+@media(max-width: 420px){
+    .Form{
+        width: 80%;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .body .links{
+        width: 100%;
+        margin-top: 35px;
+    }
+    .body .res№2{
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 0px !important;
+    }
+    .body .homeMain p{
+        margin-top: 35px;
+    }
+    .body .homeButton{
+        width: 100%;
+        justify-content: center;
+    }
+    .body .res№1{
+        width: 100%;
+    }
+    .body {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px;
+    }
+    .body img{
+        display: none;
+    }
+    .cardList{
+        flex-wrap: wrap;
+    }
+    .testList .testInfo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .testList .testInfo p{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .testList .testAttempt{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .testList .testComments .testCommentsButton textarea{
+        width: 100%;
+    }
+    .testList .testComments .testCommentsButton{
+        width: 99%;
+    }
+    .moduleBlock .progressBar{
+        width: 100%;
+    }
+    .personalArea{
+        padding: 0px 10px;
+    }
+    .personalArea .staticContent{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .personalArea .persInfoBlock{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.switch {
+    position: fixed;
+    z-index: 1000;
+    top: 90%;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    bottom: 1px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    left: 3px;
+}
+
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    left: 0px;
+}
+
+.slider.round {
+    border-radius: 7px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.className {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.studentsBlock {
+    width: 80%;
+    margin: auto;
+}
+
+.studentsItem {
+    border: 2px solid;
+    border-radius: 20px;
+    margin: 7px 0;
+    padding: 10px;
+}
+
+.studentsItem > p {
+    font-style: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.studentSuccess {
+    width: 70%;
+    margin: auto;
+}
+
+.studentSuccess p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}

@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .headerPers {
+    display: flex;
+    align-items: center;
+}
+
+.header .headerPers p {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header .headerPers p img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.bdYNGK{
+    background-color: brown;
+}
+
+@media(max-width: 450px){
+    .header .headerPers p {
+        padding: 0 0px;
+    }
+    .header{
+        padding: 5px;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,91 @@
+.Form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Form > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Form > form > p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Form > form > select{
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 2px solid #E5E5E5;
+    padding: 13px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+}
+
+.Form > form > input:placeholder-shown{
+    color: #D3D3D3;
+    font-weight: 400;
+}
+
+.studentSuccess {
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.studentSuccess p {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 1540px){
+    .Form{
+        width: 40%;
+    }
+}
+
+@media(max-width: 730px){
+    .Form{
+        width: 60%;
+    }
+}
+
+@media(max-width: 420px){
+    .Form{
+        width: 80%;
+    }
+}
+
+
+.my {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.label {
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    transition: all 0.18s ease-in-out;
+    border: 1px solid #333;
+}
+
+.label:hover {
+    color: white;
+    background: #333;
+}

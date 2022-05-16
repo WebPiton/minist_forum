@@ -1,0 +1,127 @@
+.testList{
+    padding: 67px 57px;
+    background: #fff;
+    height: 100vh;
+}
+
+.testInfo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.testInfo > p {
+    font-size: 22px;
+    font-weight: 700;
+    width: max-content;
+}
+
+.testContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.testContent h2{
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.testContent p{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.testVideo{
+    width: 80%;
+    min-height: 540px;
+    background-color: bisque;
+    border-radius: 25px;
+}
+
+.testAttempt{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testAttemptsTable {
+    width: 80%;
+}
+
+.testAttemptsTable table {
+    width:100%;
+    border-spacing: 0px;
+    /* border-collapse: collapse; */
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+table thead {
+    background: #4AA936;
+    color: #fff;
+    text-align: center;
+}
+
+table thead tr:first-child > td:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+table thead tr:last-child > td:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+table tbody tr {
+    background: #fff;
+    text-align: center;
+}
+
+table tbody tr:nth-child(2n+2) {
+    background: #F1F1F2;
+}
+
+table tbody tr:last-child > td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+table tbody tr:last-child > td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+.testAttemptsTable table p {
+    margin: auto;
+    padding: 7px;
+}
+
+.testComments {
+    width: 80%;
+}
+
+.testComments .testCommentsButton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+
+.testComments .testCommentsButton textarea {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.testComments .testCommentsButton textarea::placeholder {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}

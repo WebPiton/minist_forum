@@ -1,0 +1,34 @@
+.commentBlock {
+    width: 80%;
+    margin: auto;
+}
+
+.commentBlock .commentItem {
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.commentBlock .commentItem p {
+    margin: 0;
+}
+
+.commentBlock .commentItem .commentUser {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentBlock .commentItem .like {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.commentBlock .commentItem .like img {
+    width: 30px;
+}
+
+.commentBlock .commentItem button{
+    width: 100%;
+    margin-top: 25px;
+}
