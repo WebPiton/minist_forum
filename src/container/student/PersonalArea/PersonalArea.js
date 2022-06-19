@@ -5,38 +5,7 @@ import { ButtonRed, LinkGreen, LinkBlueTable } from "../../../StyleComponent";
 
 class PersonalArea extends Component {
   state = {
-    achievements: [
-      {
-        name: "Энтузиаст",
-        number: 1,
-        lvl: 1,
-        textAchievements: "Удерживайте ударный режим 3 дня",
-      },
-      {
-        name: "Энтузиаст",
-        number: 0,
-        lvl: 1,
-        textAchievements: "Удерживайте ударный режим 3 дня",
-      },
-      {
-        name: "Энтузиаст",
-        number: 0,
-        lvl: 1,
-        textAchievements: "Удерживайте ударный режим 3 дня",
-      },
-      {
-        name: "Энтузиаст",
-        number: 0,
-        lvl: 1,
-        textAchievements: "Удерживайте ударный режим 3 дня",
-      },
-      {
-        name: "Энтузиаст",
-        number: 0,
-        lvl: 1,
-        textAchievements: "Удерживайте ударный режим 3 дня",
-      },
-    ],
+    achievements: [],
   };
   componentDidMount() {
     document.title = "Личный кабинет";
@@ -65,9 +34,9 @@ class PersonalArea extends Component {
           <div className="buttonsBlock">
             <ButtonRed onClick={exit}>Выйти</ButtonRed>
             <LinkGreen to="/change-personal">Изменить данные</LinkGreen>
-            <LinkBlueTable style={{ marginTop: 7 }} to="/admin/table">
+            {/* <LinkBlueTable style={{ marginTop: 7 }} to="/admin/table">
               Таблицы
-            </LinkBlueTable>
+            </LinkBlueTable> */}
           </div>
         </div>
         <div className="static">
@@ -103,16 +72,20 @@ class PersonalArea extends Component {
             </div>
           </div>
         </div>
-        <div className="achievements">
-          <h2>Достижения</h2>
-          <div className="achievementscontent">
-            {this.state.achievements.map((item) => (
-              <div className="achievementsItem" key={nanoid()}>
-                <img src="/img/red.svg" alt="" />
-              </div>
-            ))}
+        {this.state.achievements.length > 0 ? (
+          <div className="achievements">
+            <h2>Достижения</h2>
+            <div className="achievementscontent">
+              {this.state.achievements.map((item) => (
+                <div className="achievementsItem" key={nanoid()}>
+                  <img src="/img/red.svg" alt="" />
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        ) : (
+          <h2>Достижений нет</h2>
+        )}
       </div>
     );
   }

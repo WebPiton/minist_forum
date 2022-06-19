@@ -30,7 +30,7 @@ class Item extends Component {
         <Header />
         <div className="moduleBlock">
           <div className="module">
-            <h1>Предметы</h1>
+            <h1 style={{ marginBottom: "10px" }}>Предметы</h1>
             {this.state.charter.length > 0 ? (
               this.state.charter.map((item) =>
                 item.access === true ? (
