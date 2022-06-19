@@ -352,6 +352,7 @@ class QuestionsFit extends Component {
                       this.state.questions[this.state.quest].descImg
                     }`}
                     alt=""
+                    style={{ width: "50%", margin: "auto" }}
                   />
                   <h3 className="сhoose_correct_answer">
                     {this.state.questions[this.state.quest].desc}
