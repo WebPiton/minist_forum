@@ -190,12 +190,6 @@ class AdminUserAdd extends Component {
                     <p key={nanoid()}>
                       Почта: <span>{item.mail}</span>
                     </p>
-                    <p key={nanoid()}>
-                      Никнейм: <span>{item.mail}</span>
-                    </p>
-                    <p key={nanoid()}>
-                      Пароль: <span>{item.mail}</span>
-                    </p>
                     <LinkBlue to="/admin" key={nanoid()}>
                       Назад
                     </LinkBlue>
